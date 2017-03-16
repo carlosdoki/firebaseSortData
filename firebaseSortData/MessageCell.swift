@@ -10,15 +10,18 @@ import UIKit
 
 class MessageCell: UITableViewCell {
 
+    @IBOutlet weak var msgTextLabel: UILabel!
+    
+    var msg: Message!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configureCell(msg: Message) {
+        self.msg = msg
+        self.msgTextLabel.text = msg.msgText
     }
 
 }

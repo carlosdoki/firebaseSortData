@@ -1,0 +1,6 @@
+framework module Pods_firebaseSortData {
+  umbrella header "Pods-firebaseSortData-umbrella.h"
+
+  export *
+  module * { export * }
+}
